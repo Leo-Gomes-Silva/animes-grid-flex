@@ -1,0 +1,269 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 40px;
+  align-items: center;
+  min-height: 15vh;
+  background-color: #191919;
+}
+.img-header{
+  width: 100px;
+  height: 100px;
+}
+.btn-header{
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 10px;
+  transition: 0.6s;
+}
+.btn-header:hover{
+  border: 2px ridge white;
+  
+}
+.btn-position{
+  gap: 15px;
+  width: auto;
+  justify-content: space-around;
+  display: flex;
+}
+.img-logo {
+  width: 250px;
+  height: 150px;
+  border-radius: 15px;
+}
+.title{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  align-items: center;
+}
+.main{
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+  "box1 box1 box1 box1"
+  "box2 box2 box2 box3"
+  "box2 box2 box2 box3"
+  "box2 box2 box2 box3"
+  "box2 box2 box2 box3";
+  padding-bottom: 50px;
+  gap: 20px;
+}
+.img-character{
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+}
+.tiltle-top{
+  font-size: 35px;
+}
+.anime-card{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  width: 252px;
+  max-height: 300px;
+  transition: 0.6s;
+  border-radius: 15px;
+}
+.anime-card:hover{
+border: 1px solid #191919;
+
+}
+.animes{
+  display: grid;
+  justify-content: space-between;
+  padding-left: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+  "anime1 anime2 anime3"
+  "anime4 anime5 anime6"
+  "anime7 anime8 anime9"
+  "anime10 anime10 anime10";
+  gap: 20px;
+}
+.header{
+  display: flex;
+}
+.anime1{
+  grid-area: anime1;
+}
+.anime2{
+  grid-area: anime2;
+}
+.anime3{
+  grid-area: anime3;
+}
+.anime4{
+  grid-area: anime4;
+}
+.anime5{
+  grid-area: anime5;
+}
+.anime6{
+  grid-area: anime6;
+}
+.anime7{
+  grid-area: anime7;
+}
+.anime8{
+  grid-area: anime8;
+}
+.anime9{
+  grid-area: anime9;
+}
+.anime10{
+  grid-area: anime10;
+}
+.character-cards{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  width: 252px;
+  padding-bottom: 15px;
+  max-height: auto;
+  transition: 0.6s;
+  border-radius: 15px;
+  background-color: black;
+}
+.character-cards:hover{
+  border: 2px solid white;
+}
+.box1{
+  grid-area: box1
+}
+.box2{
+  grid-area: box2
+}
+.box3{
+  grid-area: box3
+}
+.paragraph-white{
+  color: white;
+}
+.characters{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 15px;
+}
+.title-card-character{
+  color: white;
+  font-size: 25px;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 30px;
+  background-color: #191919;
+  color: white;
+}
+.img-footer{
+  width: 100px;
+  height: 100px;
+}
+.btn-footer{
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 10px;
+  font-size: 32px;
+}
+.btn-footer:hover{
+  border: 1px solid white;
+}
+@media (max-width: 1140px ) {
+  .animes{
+    display: grid;
+    justify-content: space-between;
+    padding-left: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "anime1 anime2 "
+    "anime3 anime4" 
+    "anime5 anime6"
+    "anime7 anime8"
+    "anime9 anime10";
+    gap: 20px;
+  }
+}
+@media (max-width: 860px ) {
+  .animes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .characters{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 15px;
+    max-height: 1700px;
+  }
+}
+@media (max-width: 575px ) {
+  .main{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    gap: 20px;
+  }
+  .footer{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  .header{
+    display: flex;
+    flex-direction: column;
+    min-height: 20vh;
+  }
+  .animes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    gap: 20px;
+  }
+  .characters{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 15px;
+    max-height: 1700px;
+  }
+}
